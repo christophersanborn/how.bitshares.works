@@ -8,17 +8,21 @@ Requirements:
 =============
 
 * A Ledger Nano S hardware wallet, with latest firmware.
-
-.. image:: ledger_nano/Ledger_Manager.png
-    :width: 400px
-    :align: center
-
 * An existing BitShares account (optional).
 
 Installation and Setup:
 =======================
 
 * The BitShares App for Ledger Nano can be installed on your Ledger Nano S device via the Ledger Live device managemnt app.
+
+.. figure:: ledger_nano/Ledger_Manager.png
+    :width: 400px
+    :align: center
+    :alt: Ledger Live Manager screen
+    :figclass: align-center
+    
+    Ledger Live "Manager" tab, showing installation of BitShares app
+    
 * A companion app, compatible with Windows, Mac, and Linux, for communicating with the the BitShares Nano app, is available from: XXXX
 
 
