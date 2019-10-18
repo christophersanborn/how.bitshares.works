@@ -32,7 +32,7 @@ The BitShares App for Ledger Nano can be installed on your Ledger Nano S device 
     :alt: Ledger Live Manager screen
     :figclass: align-center
     
-    Ledger Live "Manager" tab, showing installation of BitShares app
+    Ledger Live "Manager" tab, showing installation of BitShares app.
     
 .. figure:: ledger_nano/01_Dashboard_800.jpg
     :width: 600px
@@ -40,12 +40,20 @@ The BitShares App for Ledger Nano can be installed on your Ledger Nano S device 
     :alt: Ledger Nano S Dashboard
     :figclass: align-center
     
-    Ledger Nano S Dashboard showing BitShares app installed
+    Ledger Nano S Dashboard showing BitShares app installed.
     
 Installing SimpleGUIWallet companion app on host computer:
 ----------------------------------------------------------
 
 A companion app, compatible with Windows, Mac, and Linux, for communicating with the the BitShares Nano app, is available from: (Download location TBD)
+
+.. figure:: ledger_nano/Companion_App.png
+    :width: 600px
+    :align: center
+    :alt: Companion App
+    :figclass: align-center
+    
+    BitShares SimpleGUIWallet desktop companion app for Ledger Nano S BitShares app.
 
 Using the Companion app with Nano BitShares app:
 ================================================
