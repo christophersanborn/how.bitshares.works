@@ -12,9 +12,11 @@ Requirements:
 
 * A Ledger Nano S hardware wallet, with latest firmware.
 * An existing BitShares account (optional).
+* Ledger-aware wallet software, such as SimpleGUIWallet (described below), for managing your hardware-secured BitShares accounts
 
 Installation and Setup:
 =======================
+This section covers installation of the BitShares app on the Ledger Nano S hardware device, and the installation of the companion GUI wallet app called SimpleGUIWallet for managing your hardware-secured BitShares accounts from a host computer running Windows, OS X, or Linux.
 
 Installation of BitShares app from Ledger Live:
 -----------------------------------------------
