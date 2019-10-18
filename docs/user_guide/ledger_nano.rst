@@ -8,7 +8,7 @@ Requirements:
 =============
 
 * A Ledger Nano S hardware wallet, with latest firmware.
-* A BitShares account
+* An existing BitShares account (optional).
 
 Installation and Setup:
 =======================
