@@ -69,6 +69,10 @@ This tutorial assumes you will keep your primary BitShares account unchanged, fo
 Creating an account and associating the Nano:
 ---------------------------------------------
 
+If you already have a BitShares account and it has "lifetime membership" status, you can create a new account by selecting "Create Account" from the main drop-down menu ("Burger" menu).
+
+If you do not already have a BitShares account, or if your account does not have lifetime-membership status, then you can use one of the web wallets (e.g. https://wallet.bitshares.org) to register the account, and a faucet will pay the registration fee for you. (If you find youself unable to use the faucet (because an account was already registered in that browser), then try loading the wallet in a different browser (Firefox, Chrome, etc.) that does not already have your account stored in its local data storage.)
+
 
 
 Viewing account balances:
