@@ -82,12 +82,25 @@ Getting Public Keys from the Ledger Nano:
 
 1. Start up the companion app, SimpleGUIWallet.
 2. Connect your Ledger Nano S hardware wallet device, unlock with PIN code, and start the BitShares app.
-  * The Nano should the BitShares logo and the words **Use wallet to view accounts**.
+
+   * The Nano should the BitShares logo and the words **Use wallet to view accounts**.
+
 3. In the companion app, select the "Public Keys" tab from the main tab array.
-  * The window will show listboxes of SLIP-0048 derivation paths for three different "roles": Owner role, Active role, and Memo role.
-  * Each path will not yet show a public key, but instead will show "(??)".
+
+   * The window will show listboxes of SLIP-0048 derivation paths for three different "roles": Owner role, Active role, and Memo role.
+   * Each path will not yet show a public key, but instead will show "(??)".
+
 4. Click the "Query Addresses" button to retrieve the public keys corresponding to each derivation path from the Nano device.
-  * The list boxes will now be populated with paths and public keys.
+
+   * The list boxes will now be populated with paths and public keys.
+  
+.. figure:: ledger_nano/Public_Keys_Tab_Annotated.png
+    :width: 600px
+    :align: center
+    :alt: Public Keys Tab in Companion App
+    :figclass: align-center
+    
+    The Public Keys tab can be used to list public keys controlled by the Ledger Nano device, organized by derivation path.  
 
 
 Viewing account balances:
