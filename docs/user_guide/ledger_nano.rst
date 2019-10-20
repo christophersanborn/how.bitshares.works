@@ -58,8 +58,18 @@ A companion app, compatible with Windows, Mac, and Linux, for communicating with
 Using the Companion app with Nano BitShares app:
 ================================================
 
+BitShares accounts work different from Bitcoin accounts in that a named account must be registered on the BitShares blockchain.  One or more public keys can then be assigned as the "authorities" of that account after registering, allowing a hardware wallet to "take over" a named account.  A BitShares account records two types of authorities: "owner," and "active."  Both the owner authority and the active authority can be used to sign the majority of transactions, but while the owner authority may change the keys that control the active authority, the active authoriry may NOT change the keys that control the owner authority.  This allows the owner authority keys to be kept as an account recovery safeguard.
+
+BitShares accounts are also very capable and flexible.  The platform supports over 40 operation types.  The most commonly used operations center around trading on the decentralized exchange (DEX), and of course simple transfers of tokens.  The BitShares "Reference" UI wallet (web wallet: https://wallet.bitshares.org; standalone wallet: https://github.com/bitshares/bitshares-ui/releases) supports the full functionality of a BitShares account.
+
+The Ledger Nano BitShares app is primarily geared towards simple transfers and holding of tokens, although it is technically capable of signing any operation type.
+
+This tutorial assumes you will keep your primary BitShares account unchanged, for use in standard BitShares wallets, and will create a new, separate account, to hold funds secured by you Ledger Nano S hardware wallet device.
+
 Creating an account and associating the Nano:
 ---------------------------------------------
+
+
 
 Viewing account balances:
 -------------------------
