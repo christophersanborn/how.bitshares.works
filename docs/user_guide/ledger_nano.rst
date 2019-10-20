@@ -66,13 +66,28 @@ The Ledger Nano BitShares app is primarily geared towards simple transfers and h
 
 This tutorial assumes you will keep your primary BitShares account unchanged, for use in standard BitShares wallets, and will create a new, separate account, to hold funds secured by you Ledger Nano S hardware wallet device.
 
-Creating an account and associating the Nano:
----------------------------------------------
+Creating an account to associate with the Nano:
+-----------------------------------------------
 
-If you already have a BitShares account and it has "lifetime membership" status, you can create a new account by selecting "Create Account" from the main drop-down menu ("Burger" menu).
+If you already have a BitShares account and it has "lifetime membership" status, you can easily create a new account by selecting "Create Account" from the main drop-down menu ("Burger" menu).
 
-If you do not already have a BitShares account, or if your account does not have lifetime-membership status, then you can use one of the web wallets (e.g. https://wallet.bitshares.org) to register the account, and a faucet will pay the registration fee for you. (If you find youself unable to use the faucet (because an account was already registered in that browser), then try loading the wallet in a different browser (Firefox, Chrome, etc.) that does not already have your account stored in its local data storage.)
+If you do not already have a BitShares account, or if your account does not have lifetime-membership status, then you can use one of the web wallets (e.g. https://wallet.bitshares.org) to register the account, and a faucet will pay the registration fee for you. (If you find yourself unable to use the faucet because an account was already registered in that browser, then try loading the wallet in a different browser (Firefox, Chrome, etc.) that does not already have your account stored in its local data storage.  Or, you can clear browser data to "reset" the wallet — but be sure you have your private keys or login credentials for your primary account securely backed up!)
 
+[image]
+
+Once you have created this account, you will next need to retrieve two public keys from your Ledger Nano S hardware wallet, and set them as your account's owner and active authories.  Once the original account keys are removed and replaced with these new keys, the account will be controlled solely by the Ledger Nano S hardware device.
+
+Getting Public Keys from the Ledger Nano:
+-----------------------------------------
+
+1. Start up the companion app, SimpleGUIWallet.
+2. Connect your Ledger Nano S hardware wallet device, unlock with PIN code, and start the BitShares app.
+  * The Nano should the BitShares logo and the words **Use wallet to view accounts**.
+3. In the companion app, select the "Public Keys" tab from the main tab array.
+  * The window will show listboxes of SLIP-0048 derivation paths for three different "roles": Owner role, Active role, and Memo role.
+  * Each path will not yet show a public key, but instead will show "(??)".
+4. Click the "Query Addresses" button to retrieve the public keys corresponding to each derivation path from the Nano device.
+  * The list boxes will now be populated with paths and public keys.
 
 
 Viewing account balances:
