@@ -73,7 +73,13 @@ If you already have a BitShares account and it has "lifetime membership" status,
 
 If you do not already have a BitShares account, or if your account does not have lifetime-membership status, then you can use either the standalone wallet or one of the web-hosted wallets (e.g. https://wallet.bitshares.org) to register the account, and a faucet will pay the registration fee for you. A tricky thing though is that most such wallets will only pay the registration fee for ONE account per wallet instance.  So if you used the standalone wallet to register your primary account, then you may wish to use the web-hosted wallet to register your new account, or vice-versa.  Or you can use load the web wallet from a different device, or a different browser, to get back to the faucet-subsidized account registration screen.
 
-[image]
+.. figure:: ledger_nano/Account_Create.png
+    :width: 600px
+    :align: center
+    :alt: Account Create form in BitShares UI
+    :figclass: align-center
+    
+    Account Create form in the BitShares reference UI Wallet.
 
 Once you have created this account, you will next need to retrieve **two** public keys from your Ledger Nano S hardware wallet, and set them as your account's "owner" and "active" authories.  Once the original account keys are removed and replaced with these new keys, the account will be controlled solely by the Ledger Nano S hardware device.
 
