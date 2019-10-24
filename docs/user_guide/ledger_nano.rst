@@ -64,18 +64,18 @@ BitShares accounts are also very capable and flexible.  The platform supports ov
 
 The Ledger Nano BitShares app is primarily geared towards simple transfers and holding of tokens, although it is technically capable of signing any operation type.
 
-This tutorial assumes you will keep your primary BitShares account unchanged, for use in standard BitShares wallets, and will create a new, separate account, to hold funds secured by you Ledger Nano S hardware wallet device.
+This tutorial assumes you will keep your primary BitShares account unchanged, for use in standard BitShares wallets, and will create a new, separate account, to hold funds secured by you Ledger Nano S hardware wallet device.  Essentially, we assume your existing account will be the "hot wallet," and the new account will be your hardware-secured "cold wallet."
 
 Step 1: Create an account to associate with the Nano:
 -----------------------------------------------------
 
 If you already have a BitShares account and it has "lifetime membership" status, you can easily create a new account by selecting "Create Account" from the main drop-down menu ("Burger" menu).
 
-If you do not already have a BitShares account, or if your account does not have lifetime-membership status, then you can use one of the web wallets (e.g. https://wallet.bitshares.org) to register the account, and a faucet will pay the registration fee for you. (If you find yourself unable to use the faucet because an account was already registered in that browser, then try loading the wallet in a different browser (Firefox, Chrome, etc.) that does not already have your account stored in its local data storage.  Or, you can clear browser data to "reset" the wallet — but be sure you have your private keys or login credentials for your primary account securely backed up!)
+If you do not already have a BitShares account, or if your account does not have lifetime-membership status, then you can use either the standalone wallet or one of the web-hosted wallets (e.g. https://wallet.bitshares.org) to register the account, and a faucet will pay the registration fee for you. A tricky thing though is that most such wallets will only pay the registration fee for ONE account per wallet instance.  So if you used the standalone wallet to register your primary account, then you may wish to use the web-hosted wallet to register your new account, or vice-versa.  Or you can use load the web wallet from a different device, or a different browser, to get back to the faucet-subsidized account registration screen.
 
 [image]
 
-Once you have created this account, you will next need to retrieve two public keys from your Ledger Nano S hardware wallet, and set them as your account's owner and active authories.  Once the original account keys are removed and replaced with these new keys, the account will be controlled solely by the Ledger Nano S hardware device.
+Once you have created this account, you will next need to retrieve **two** public keys from your Ledger Nano S hardware wallet, and set them as your account's "owner" and "active" authories.  Once the original account keys are removed and replaced with these new keys, the account will be controlled solely by the Ledger Nano S hardware device.
 
 Step 2: Get Public Keys from the Ledger Nano:
 ---------------------------------------------
