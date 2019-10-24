@@ -58,7 +58,7 @@ A companion app, compatible with Windows, Mac, and Linux, for communicating with
 Using the Companion app with Nano BitShares app:
 ================================================
 
-BitShares accounts work differently from Bitcoin accounts in that a named account must be registered on the BitShares blockchain.  Public keys are then be added to the account to define "authorities" capable of signing transactions.
+BitShares accounts work differently from Bitcoin accounts in that a named account must be registered on the BitShares blockchain.  Public keys can be declared by the account to act as "authorities" capable of signing transactions.
 
 BitShares accounts are also very capable and flexible.  The platform supports over 40 operation types.  The most commonly used operations center around trading on the decentralized exchange (DEX), and of course simple transfers of tokens.  The BitShares "Reference" UI wallet (web wallet: https://wallet.bitshares.org; standalone wallet: https://github.com/bitshares/bitshares-ui/releases) supports the full functionality of a BitShares account.
 
