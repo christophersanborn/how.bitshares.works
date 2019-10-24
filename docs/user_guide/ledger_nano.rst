@@ -86,7 +86,7 @@ Once you have created this account, you will next need to retrieve **two** publi
 Step 2: Get Public Keys from the Ledger Nano:
 ---------------------------------------------
 
-A BitShares account records two types of authorities: "owner," and "active."  Both the owner authority and the active authority can be used to sign the majority of transactions, but the active authority is prohibited from changing the owner authority, allowing the owner authority keys to be kept as an account recovery safeguard.  For this tutorial, we will retrieve two keys from the Nano to serve for both the Owner and Active authorities on our new account.
+A BitShares account specifies two types of authorities: "owner," and "active," which each declare a list of weighted public keys which are needed to sign transactions. Either the owner authority or the active authority can be used to sign the majority of transactions types.  Your newly-created account will have defualt keys, generated during registration, already set for these authorities.  We wish to replace these with public keys retrieved from the Ledger Nano device.  We do this as follows:
 
 1. Start up the companion app, SimpleGUIWallet.
 2. Connect your Ledger Nano S hardware wallet device, unlock with PIN code, and start the BitShares app.
