@@ -55,8 +55,8 @@ A companion app, compatible with Windows, Mac, and Linux, for communicating with
     
     BitShares SimpleGUIWallet desktop companion app for Ledger Nano S BitShares app.
 
-Using the Companion app with Nano BitShares app:
-================================================
+Securing a BitShares Account with the Ledger Nano:
+==================================================
 
 BitShares accounts work differently from Bitcoin wallets in that a named account must be registered on the BitShares blockchain.  The account will declare one or more public keys to act as "authorities" capable of signing transactions.
 
@@ -124,6 +124,9 @@ Step 4: Add the keys to your new account:
 -----------------------------------------
 
 
+
+Using the Companion app with Nano BitShares app:
+================================================
 
 Viewing account balances:
 -------------------------
