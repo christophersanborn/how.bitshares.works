@@ -64,6 +64,11 @@ BitShares accounts are very capable and flexible.  The platform supports over 40
 
 This tutorial assumes that you already have an existing BitShares account for use in a standard, full-featured BitShares UI, and that you will be creating a new, separate account, to hold tokens secured by your Ledger Nano S hardware wallet device.  Essentially, we assume your existing account will be the "hot wallet," and the new account will be your hardware-secured "cold wallet."
 
+.. image:: ledger_nano/Companion_App.png
+    :width: 49%
+.. image:: ledger_nano/Companion_App.png
+    :width: 49%
+
 Step 1: Create an account to associate with the Nano:
 -----------------------------------------------------
 
