@@ -84,16 +84,17 @@ Once you have created this account, you will next need to retrieve **two** publi
 Step 2: Get Public Keys from the Ledger Nano:
 ---------------------------------------------
 
-A BitShares account specifies two types of authorities: "owner," and "active," which each declare a list of weighted public keys which are needed to sign transactions. Either the owner authority or the active authority can be used to sign the majority of transactions types.  Your newly-created account will have default keys, generated during registration, already set for these authorities.  We wish to replace these with public keys retrieved from the Ledger Nano device.  We do this as follows:
+A BitShares account specifies two types of authorities: "Owner," and "Active," which each declare a weighted list of public keys needed to sign transactions. (The weights allow for multisignature arrangements to be created.  Here we will only consider a single key per authority.)  For the majority of transaction types, either the "owner" authority or the "active" authority may sign the transaction.  Your newly-created account will have had default keys generated for it during registration.  We will replace these keys with public keys retrieved from the Ledger Nano device.  We do this as follows:
 
-1. Start up the companion app, SimpleGUIWallet.
+1. Start up the companion app, *SimpleGUIWallet*.
 2. Connect your Ledger Nano S hardware wallet device, unlock with PIN code, and start the BitShares app.
 
    * The Nano should the BitShares logo and the words **Use wallet to view accounts**.
 
 3. In the companion app, select the "Public Keys" tab from the main tab array.
 
-   * The window will show listboxes of SLIP-0048 derivation paths for three different "roles": Owner role, Active role, and Memo role.
+   * The window will show listboxes of `SLIP-0048 <https://github.com/satoshilabs/slips/blob/master/slip-0048.md>`_ derivation paths for three different "roles": Owner role, Active role, and Memo role.
+   * (Note: SLIP-0048 is a key derivation scheme analogous to Bitcoin's BIP-44, but tailored for the key roles used in Graphene-based blockchains such as BitShares.)
    * Each path will not yet show a public key, but instead will show "(??)".
 
 4. Click the "Query Addresses" button to retrieve the public keys corresponding to each derivation path from the Nano device.
