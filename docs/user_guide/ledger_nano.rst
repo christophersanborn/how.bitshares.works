@@ -107,9 +107,20 @@ A BitShares account specifies two types of authorities: "Owner," and "Active," w
     :alt: Public Keys Tab in Companion App
     :figclass: align-center
     
-    The Public Keys tab can be used to list public keys controlled by the Ledger Nano device, organized by derivation path.  
+    The Public Keys tab can be used to list public keys controlled by the Ledger Nano device, organized by derivation path.
 
-Step 3: Add the keys to your new account:
+5. Now we wish to select one key to use for our account's Owner role and one for the Active role.  You may of course choose any key, but the recommendation is to choose the first key on the "Owner role" list (path 48'/1'/0'/0'/0') for the owner authority and the first key from the "Active role" list (path 48'/1'/1'/0'/0') for the active authority.  When an item from the listbox is selected, the public key appears in the PubKey box at the top of the window, where it can be copied to your computer's clipboard.
+
+Step 3: Confirm keys on Ledger Nano device:
+-------------------------------------------
+
+It is highly recommended to *confirm* your selected keys on the Ledger Nano device prior to importing them as authorities into your new BitShares account.  This is to ensure that the *SimpleGUIWallet* companion app has not been tampered with to give you a decoy key.  Confirm keys as follows:
+
+1. In the "Public Keys" tab of *SimpleGUIWallet*, query addresses as in the subsection above.  Then select the key you wish to confirm from the list, and click the "Confirm Address" button.
+
+2. On your Ledger Nano device, look to see that the device says "**Confirm public key**" and displays the exact same public key as you see in the _SimpleGUIWallet_ app.  If the keys do not match, DO NOT trust the key from _SimpleGUIWallet_.  If the keys do match, then you know that the Ledger Nano device can sign transactions using the key, and you may import the key into your account, as described in the next subsection.
+
+Step 4: Add the keys to your new account:
 -----------------------------------------
 
 
