@@ -118,10 +118,12 @@ It is highly recommended to *confirm* your selected keys on the Ledger Nano devi
 
 1. In the "Public Keys" tab of *SimpleGUIWallet*, query addresses as in the subsection above.  Then select the key you wish to confirm from the list, and click the "Confirm Address" button.
 
-2. On your Ledger Nano device, look to see that the device says "**Confirm public key**" and displays the exact same public key as you see in the _SimpleGUIWallet_ app.  If the keys do not match, DO NOT trust the key from _SimpleGUIWallet_.  If the keys do match, then you know that the Ledger Nano device can sign transactions using the key, and you may import the key into your account, as described in the next subsection.
+2. On your Ledger Nano device, look to see that the device says "**Confirm public key**" and displays the exact same public key as you see in the *SimpleGUIWallet* app.  If the keys do not match, DO NOT trust the key from *SimpleGUIWallet*.  If the keys do match, then you know that the Ledger Nano device can sign transactions using the key, and you may import the key into your account, as described in the next subsection.
 
 Step 4: Add the keys to your new account:
 -----------------------------------------
+
+In the BitShares UI wallet where you created your new account, navigate to the "Permissions" area by clicking the Menu icon (upper right), selceting "Settings," then "Accounts," and then "View Keys" for the appropriate account, as illustrated below:
 
 .. figure:: ledger_nano/Update_Keys_UI_Location.png
     :width: 80%
@@ -131,6 +133,8 @@ Step 4: Add the keys to your new account:
     
     Keys are managed under Settings —> Accounts —> View Keys.
 
+Once in the "Permissions" tab, you should see the screen below, where we will first replace the Active authority key, and then the Owner authority key.  
+
 .. figure:: ledger_nano/Update_Keys_Step3.png
     :width: 80%
     :align: center
@@ -138,6 +142,28 @@ Step 4: Add the keys to your new account:
     :figclass: align-center
     
     Adding a new Active key and removing the old one.
+
+Steps:
+
+1. Select the "Active Permissions" sub-tab, (if not already selected).
+
+2. Observe the "Threshold" value.  If this is a new account, registered in the standard way, this value should be "1".  Do not change it, unless you knwo what you are doing.
+
+3. In the "Enter acount name/key and weight" field, paste an appropriate key copied from the "Public Keys" tab in *SimpleGUIWallet*.  (E.g. a key from the "Active role" list, if this is for the account's active authority.)
+
+4. For the key weight, enter "1".  (This is equal to the threshold, meaning this key can unilaterally sign transactions as the account's active authority.)
+
+5. Click "Add" to add the key to the list below.  You will now see two keys listed under "Account / Key / Addresss".  They are the new key just added, and the previous key that was generated when the account was registered.
+
+6. Click the "Remove" button next to the old key.  This will remove the ability of the old key to sign transactions for the account, leaving only the key derived from the Ledger Nano device to sign as the account's active authority.
+
+7. At the top of the window, click the "Save" button to apply these changes to the account.  You will be asked to confirm the "account update" transaction, and may be asked to type the password you chose when you created the account, in order to unlock the UI wallet.  When the transaction is broadcast and confirmed on the blockchain, your account's Active authority will have been successfully replaced with the new key managed by the Nano.
+
+Once these steps are complete, repeat the above steps, but this time for the "Owner Permissions" tab, and select a Nano key from the "Owner role" listbox.
+
+When both the Active and Owner keys have been replaced, your new account can *ONLY* sign transactions with the aid of your Ledger Nano hardware device, and your account is now secured.
+
+(Note: The BitShares UI wallet Permissions tab will also let you replace the Memo key. However, this is not recommended in this tutorial.  Although SLIP-0048 does define a key path for memo keys, and these public keys can be retrieved from the Nano, the Ledger Nano S BitShares app does not currently support encrypting or decrypting memos with the Nano.  Leaving this key unchanged means you can still use the regular BitShares UI wallet to read memos attached to transactions.)
 
 
 Using the Companion app with Nano BitShares app:
