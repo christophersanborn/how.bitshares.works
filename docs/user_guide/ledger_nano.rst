@@ -123,6 +123,29 @@ It is highly recommended to *confirm* your selected keys on the Ledger Nano devi
 Step 4: Add the keys to your new account:
 -----------------------------------------
 
+.. figure:: ledger_nano/Update_Keys_Step1.png
+    :width: 80%
+    :align: center
+    :alt: Select "Settings" from main menu
+    :figclass: align-center
+    
+    Keys are managed under Settings.
+
+.. figure:: ledger_nano/Update_Keys_Step2.png
+    :width: 80%
+    :align: center
+    :alt: Select "View Keys" for the account you wish to update
+    :figclass: align-center
+    
+    Select "View Keys" for the account you wish to update.
+
+.. figure:: ledger_nano/Update_Keys_Step3.png
+    :width: 80%
+    :align: center
+    :alt: Add new key, remove old key 
+    :figclass: align-center
+    
+    Adding a new Active key and removing the old one.
 
 
 Using the Companion app with Nano BitShares app:
