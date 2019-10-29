@@ -171,13 +171,13 @@ When both the Active and Owner keys have been replaced, your new account can *ON
 Using the Companion app with Nano BitShares app:
 ================================================
 
-*SimpleGUIWallet* is a very bare-bones, rudimentary GUI interface to the Ledger Nano BitShares app. It does not maintain a database of keys or accounts, and will not write any data or cinfiguration files to disk. When you start *SimpleGUIWallet*, you will need to tell it which BitShares account you wish to act as, and which key (specified as a *SLIP-0048 derivation path*) to use when signing transactions.
+*SimpleGUIWallet* is a very bare-bones, rudimentary GUI interface to the Ledger Nano BitShares app. It does not maintain a database of keys or accounts, and will not write any data or configuration files to disk. When you start *SimpleGUIWallet*, you will need to tell it which BitShares account you wish to use, and which key (specified as a SLIP-0048 derivation path) to use when signing transactions.
 
 The *SimpleGUIWallet* window is divided into four general areas:
 
-* **Top**: This is where you type the name of a BitShares account that you wish to act as.  Also you specify the path of the key that the Ledger Nano will use to sign transactions (the default value is the first key under the "active role" and is usually what you want). The "PubKey" box may or may not show the actual key, depending on whether the app has queried the key from the Nano. (This is a read-only field and it's OK for this field to be blank.)
+* **Top**: This is where you type the name of a BitShares account that you wish to act as, and which key will be used to sign transactions.
 
-* **Middle Left**:  Here there are two tabs that show information about the selcted account.  After clicking "Refresh Balances," the Asset tab will populate with a list of assets (tokens) held by the account, and the History tab will populate with a list of recent transactions conducted by the account.
+* **Middle Left**:  Here there are two tabs that show information about the selected account.  After clicking "Refresh Balances," the Assets tab will populate with a list of assets (tokens) held by the account, and the History tab will populate with a list of recent transactions conducted by the account.
 
 * **Middle Right**:  Here are tabs where you can "do things."  There is a tab for transfering tokens, a tab for querrying the Ledger Nano to determine what keys it manages, and a tab for Raw Transactions, which can be used for advanced purposes not covered by this tutorial.
 
