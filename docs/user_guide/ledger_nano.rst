@@ -49,14 +49,6 @@ Installing SimpleGUIWallet companion app on host computer:
 
 A companion app, compatible with Windows, Mac, and Linux, for communicating with the the BitShares Nano app, is available from: (Download location TBD)
 
-.. figure:: ledger_nano/Companion_App.png
-    :width: 600px
-    :align: center
-    :alt: Companion App
-    :figclass: align-center
-    
-    BitShares SimpleGUIWallet desktop companion app for Ledger Nano S BitShares app.
-
 Securing a BitShares Account with the Ledger Nano:
 ==================================================
 
@@ -182,6 +174,14 @@ The *SimpleGUIWallet* window is divided into four general areas:
 * **Middle Right**:  Here are tabs where you can "do things."  There is a tab for transfering tokens, a tab for querrying the Ledger Nano to determine what keys it manages, and a tab for Raw Transactions, which can be used for advanced purposes not covered by this tutorial.
 
 * **Bottom**:  At the bottom is a status pane that will print messages informing you of how the app is interacting with the BitShares network and with the Ledger Nano hardware device.
+
+.. figure:: ledger_nano/Companion_App.png
+    :width: 80%
+    :align: center
+    :alt: Companion App
+    :figclass: align-center
+    
+    BitShares SimpleGUIWallet desktop companion app for Ledger Nano S BitShares app.
 
 Viewing account balances:
 -------------------------
