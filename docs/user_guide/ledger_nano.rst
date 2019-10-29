@@ -186,15 +186,56 @@ The *SimpleGUIWallet* window is divided into four general areas:
 Viewing account balances:
 -------------------------
 
-Receiving funds:
-----------------
+The "Assets" tab on the left side of the window shows a list of assets held by the account, and their respective balances.  After typing a BitShares account name in the "BitShares User Account" field at the top of the window, click the "Refresh Balances" button to refresh this list.
 
-Sending funds:
---------------
+Receiving tokens:
+-----------------
+
+Receiving crypto assets is very easy in BitShares.  Just give the sending party your BitShares account name, and they can send tokens to you.  There is no need to retrieve "addresses" or keys from the wallet to recieve funds. 
+
+Sending tokens:
+---------------
+
+Sending tokens from your account can be done on the "Transfers" tab.
+
+1. Enter your account name in the "BitShares User Account" field.  Optional: Click "Refresh Balances" to see asset balances for this account in the Assets tab.
+
+2. Select the "Transfer" tab.
+
+3. Fill out the "Send To", "Amount", and "Asset" symbol fields.
+
+   * Tip: Clicking an asset balance in the Assets list will auto-populate the asset symbol field on the Transfer tab.
+   
+4. Connect your Ledger Nano and start the BitShares app.
+
+5. Click "Send Transfer".
+
+6. Review transaction details, and confirm if the details are correct, else reject.
+
+7. If you confirmed the transaction on the device, then *SimpleGUIWallet* will append the signature to the transaction and broadcast to the BitShares netowrk.  The status pane will indicate if the transaction was sucessful or not.
+
+After the transaction is broadcast, the balances in the Assets tab should update.  If they do not, click "Refresh Balances" to refresh them.  Likewise, the transfer operation should appear on the "History" tab, if the transaction was successful.
 
 Advanced usage:
 ---------------
 
+If you have followed this tutorial, then your new account is now solely controled by keys managed by your Ledger Nano S hardware wallet device.  It is possible that you may at some point desire to use some of the other features of the BitShares platform, beyond simple transfers.  The *BitShares App for Ledger Nano S* can sign any valid BitShares transaction, provided you can send it to the device for signing.  The "Raw Transactions" tab in *SimpleGUIWallet* allows this, provided you can construct the transaction as a JSON string.  How to do this is not covered by this tutorial, but the reader is directed to consult the technical documentation for BitShares or to seek the help of the BitShares community via forums or chat rooms. 
+
 Getting Support:
 ================
+
+* https://bitshares.org
+
+* https://how.bitshares.works/ — BitShares documentation
+
+* `Ledger Nano BitShares App Issue Tracker <https://github.com/bitshares/ledger-app-bitshares/issues>`_ — Submit bug reports here.
+
+* Various Telegram groups:
+
+  * `t.me/BitSharesDEX <https://t.me/BitSharesDEX>`_
+
+  * `t.me/btsWalletHelp <https://t.me/btsWalletHelp>`_
+
+  * `t.me/btstalk <https://t.me/btstalk>`_
+
 
