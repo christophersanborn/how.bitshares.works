@@ -175,6 +175,8 @@ The *SimpleGUIWallet* window is divided into four general areas:
 
 * **Bottom**:  At the bottom is a status pane that will print messages informing you of how the app is interacting with the BitShares network and with the Ledger Nano hardware device.
 
+When you start up *SimpleGUIWallet*, it will automatically connect to the BitShares network by locating a public API node to communicate with.
+
 .. figure:: ledger_nano/Companion_App.png
     :width: 80%
     :align: center
@@ -186,7 +188,9 @@ The *SimpleGUIWallet* window is divided into four general areas:
 Viewing account balances:
 -------------------------
 
-The "Assets" tab on the left side of the window shows a list of assets held by the account, and their respective balances.  After typing a BitShares account name in the "BitShares User Account" field at the top of the window, click the "Refresh Balances" button to refresh this list.
+BitShares is a multi-asset platform.  The core token on BitShares is the BTS token, but there are also numerous user-issued assets and assets defined by smart contracts.  The Ledger Nano S BitShares app can send and receive any tokens that your BitShares account is authorized to hold.
+
+The "Assets" tab on the left side of the window shows a list of assets held by the selected account, and their respective balances.  After typing a BitShares account name in the "BitShares User Account" field at the top of the window, click the "Refresh Balances" button to refresh this list.
 
 Receiving tokens:
 -----------------
@@ -198,7 +202,9 @@ Sending tokens:
 
 Sending tokens from your account can be done on the "Transfers" tab.
 
-1. Enter your account name in the "BitShares User Account" field.  Optional: Click "Refresh Balances" to see asset balances for this account in the Assets tab.
+1. Enter your account name in the "BitShares User Account" field.
+
+   * Optional: Click "Refresh Balances" to see asset balances for this account in the Assets tab.
 
 2. Select the "Transfer" tab.
 
