@@ -202,8 +202,9 @@ Sending tokens from your account can be done on the "Transfers" tab.
 
 2. Select the "Transfer" tab.
 
-3. Fill out the "Send To", "Amount", and "Asset" symbol fields.
+3. Fill out the "Send To", "Amount", and "Asset" fields.
 
+   * The "Asset" field takes a ticker symbol for the token type that you wish to send.  See the "Assets" tab for a list of tokens in your account.
    * Tip: Clicking an asset balance in the Assets list will auto-populate the asset symbol field on the Transfer tab.
    
 4. Connect your Ledger Nano and start the BitShares app.
@@ -212,7 +213,7 @@ Sending tokens from your account can be done on the "Transfers" tab.
 
 6. Review transaction details, and confirm if the details are correct, else reject.
 
-7. If you confirmed the transaction on the device, then *SimpleGUIWallet* will append the signature to the transaction and broadcast to the BitShares netowrk.  The status pane will indicate if the transaction was sucessful or not.
+7. If you confirmed the transaction on the device, then *SimpleGUIWallet* will append the signature to the transaction and broadcast it to the BitShares netowrk.  The status pane will indicate if the transaction was sucessful or not.
 
 After the transaction is broadcast, the balances in the Assets tab should update.  If they do not, click "Refresh Balances" to refresh them.  Likewise, the transfer operation should appear on the "History" tab, if the transaction was successful.
 
