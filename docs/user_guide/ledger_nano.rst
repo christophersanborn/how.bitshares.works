@@ -2,7 +2,9 @@
 Securing BitShares with Ledger Nano
 ***********************************
 
-Your BitShares account can be secured by a `Ledger Nano S hardware wallet <https://shop.ledger.com/products/ledger-nano-s>`_.  Hardware wallets secure crypto assets by protecting private keys. Transaction signing occurs on the hardware device itself, rather than on a host computer, isolating keys from exposure to malware or other threats.
+Your BitShares account can be secured by a `Ledger Nano S hardware wallet <https://shop.ledger.com/products/ledger-nano-s>`_.  Hardware wallets secure crypto assets by protecting private keys. With a hardware wallet-secured account, transaction signing occurs on the hardware device itself, rather than on a host computer, isolating keys from exposure to malware or other threats.
+
+This tutorial explains how to create a new BitShares account and set its Active and Owner authorities to keys managed by the Ledger Nano S hardware wallet, using the *BitShares App for Ledger Nano S* and a companion GUI app called *SimpleGUIWallet*.
 
 .. contents:: **Contents:**
     :depth: 2
