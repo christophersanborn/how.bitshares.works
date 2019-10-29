@@ -123,21 +123,13 @@ It is highly recommended to *confirm* your selected keys on the Ledger Nano devi
 Step 4: Add the keys to your new account:
 -----------------------------------------
 
-.. figure:: ledger_nano/Update_Keys_Step1.png
+.. figure:: ledger_nano/Update_Keys_UI_Location.png
     :width: 80%
     :align: center
     :alt: Select "Settings" from main menu
     :figclass: align-center
     
-    Keys are managed under Settings.
-
-.. figure:: ledger_nano/Update_Keys_Step2.png
-    :width: 80%
-    :align: center
-    :alt: Select "View Keys" for the account you wish to update
-    :figclass: align-center
-    
-    Select "View Keys" for the account you wish to update.
+    Keys are managed under Settings —> Accounts —> View Keys.
 
 .. figure:: ledger_nano/Update_Keys_Step3.png
     :width: 80%
