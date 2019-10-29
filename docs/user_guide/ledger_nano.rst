@@ -123,7 +123,7 @@ It is highly recommended to *confirm* your selected keys on the Ledger Nano devi
 Step 4: Add the keys to your new account:
 -----------------------------------------
 
-In the BitShares UI wallet where you created your new account, navigate to the "Permissions" area by clicking the Menu icon (upper right), selceting "Settings," then "Accounts," and then "View Keys" for the appropriate account, as illustrated below:
+In the BitShares UI wallet where you created your new account, navigate to the "Permissions" area by clicking the Menu icon (upper right), selecting "Settings," then "Accounts," and then "View Keys" for the appropriate account, as illustrated below:
 
 .. figure:: ledger_nano/Update_Keys_UI_Location.png
     :width: 80%
@@ -147,13 +147,13 @@ Steps:
 
 1. Select the "Active Permissions" sub-tab, (if not already selected).
 
-2. Observe the "Threshold" value.  If this is a new account, registered in the standard way, this value should be "1".  Do not change it, unless you knwo what you are doing.
+2. Observe the "Threshold" value.  If this is a new account, registered in the standard way, this value should be "1".  Do not change it.
 
-3. In the "Enter acount name/key and weight" field, paste an appropriate key copied from the "Public Keys" tab in *SimpleGUIWallet*.  (E.g. a key from the "Active role" list, if this is for the account's active authority.)
+3. In the "Enter account name/key and weight" field, paste an appropriate key copied from the "Public Keys" tab in *SimpleGUIWallet*.  (E.g. a key from the "Active role" list, if this is for the account's active authority.)
 
 4. For the key weight, enter "1".  (This is equal to the threshold, meaning this key can unilaterally sign transactions as the account's active authority.)
 
-5. Click "Add" to add the key to the list below.  You will now see two keys listed under "Account / Key / Addresss".  They are the new key just added, and the previous key that was generated when the account was registered.
+5. Click "Add" to add the key to the list of keys recognized by the account.  You will now see two keys listed under "Account / Key / Addresss".  They are the new key just added, and the old key that was generated when the account was registered.
 
 6. Click the "Remove" button next to the old key.  This will remove the ability of the old key to sign transactions for the account, leaving only the key derived from the Ledger Nano device to sign as the account's active authority.
 
