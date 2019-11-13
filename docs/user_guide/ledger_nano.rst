@@ -86,7 +86,7 @@ A BitShares account specifies two types of authorities: "Owner," and "Active," w
 1. Start up the companion app, *SimpleGUIWallet*.
 2. Connect your Ledger Nano S hardware wallet device, unlock with PIN code, and start the BitShares app.
 
-   * The Nano should the BitShares logo and the words **Use wallet to view accounts**.
+   * The Nano should display the BitShares logo and the words **Use wallet to view accounts**.
 
 3. In the companion app, select the "Public Keys" tab from the main tab array.
 
