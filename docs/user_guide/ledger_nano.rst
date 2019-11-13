@@ -23,7 +23,7 @@ This section covers installation of the BitShares app on the Ledger Nano S hardw
 Installation of BitShares app from Ledger Live
 ----------------------------------------------
 
-The BitShares App for Ledger Nano can be installed on your Ledger Nano S device from a host computer via the `Ledger Live <https://shop.ledger.com/pages/ledger-live>`_ device managemnt app.
+The BitShares App for Ledger Nano can be installed on your Ledger Nano S device from a host computer via the `Ledger Live <https://shop.ledger.com/pages/ledger-live>`_ device management app.
 
 1. Select the "Manager" tab from the menu in Ledger Live.
 2. Search for the BitShares app in the App Catalog.
@@ -76,12 +76,12 @@ If you do not already have a BitShares account, or if your account does not have
     
     Account Create form in the BitShares reference UI Wallet.
 
-Once you have created this account, you will next need to retrieve **two** public keys from your Ledger Nano S hardware wallet, and set them as your account's "owner" and "active" authories.  Once the original account keys are removed and replaced with these new keys, the account will be controlled solely by the Ledger Nano S hardware device.
+Once you have created this account, you will next need to retrieve **two** public keys from your Ledger Nano S hardware wallet, and set them as your account's "owner" and "active" authorities.  Once the original account keys are removed and replaced with these new keys, the account will be controlled solely by the Ledger Nano S hardware device.
 
 Step 2: Get Public Keys from the Ledger Nano
 --------------------------------------------
 
-A BitShares account specifies two types of authorities: "Owner," and "Active," which each declare a weighted list of public keys needed to sign transactions. (The weights allow for multisignature arrangements.  Here we will only consider a single key per authority.)  For the majority of transaction types, either the "owner" authority or the "active" authority may sign the transaction.  Your newly-created account will have had default keys generated for it during registration.  We will replace these keys with public keys retrieved from the Ledger Nano device.  We do this as follows:
+A BitShares account specifies two types of authorities: "Owner," and "Active," which each declare a weighted list of public keys needed to sign transactions. (The weights allow for multi-signature arrangements.  Here we will only consider a single key per authority.)  For the majority of transaction types, either the "owner" authority or the "active" authority may sign the transaction.  Your newly-created account will have had default keys generated for it during registration.  We will replace these keys with public keys retrieved from the Ledger Nano device.  We do this as follows:
 
 1. Start up the companion app, *SimpleGUIWallet*.
 2. Connect your Ledger Nano S hardware wallet device, unlock with PIN code, and start the BitShares app.
@@ -90,7 +90,7 @@ A BitShares account specifies two types of authorities: "Owner," and "Active," w
 
 3. In the companion app, select the "Public Keys" tab from the main tab array.
 
-   * The window will show listboxes of `SLIP-0048 <https://github.com/satoshilabs/slips/blob/master/slip-0048.md>`_ derivation paths for three different "roles": Owner role, Active role, and Memo role.
+   * The window will show list boxes of `SLIP-0048 <https://github.com/satoshilabs/slips/blob/master/slip-0048.md>`_ derivation paths for three different "roles": Owner role, Active role, and Memo role.
    * (Note: SLIP-0048 is a key derivation scheme analogous to Bitcoin's BIP-44, but tailored for the key roles used in Graphene-based blockchains such as BitShares.)
    * Each path will not yet show a public key, but instead will show "(??)".
 
@@ -106,7 +106,7 @@ A BitShares account specifies two types of authorities: "Owner," and "Active," w
     
     The Public Keys tab can be used to list public keys controlled by the Ledger Nano device, organized by derivation path.
 
-5. Now we wish to select one key to use for our account's Owner role and one for the Active role.  You may of course choose any key, but the recommendation is to choose the first key on the "Owner role" list (path 48'/1'/0'/0'/0') for the owner authority and the first key from the "Active role" list (path 48'/1'/1'/0'/0') for the active authority.  When an item from the listbox is selected, the public key appears in the PubKey box at the top of the window, where it can be copied to your computer's clipboard.
+5. Now we wish to select one key to use for our account's Owner role and one for the Active role.  You may of course choose any key, but the recommendation is to choose the first key on the "Owner role" list (path 48'/1'/0'/0'/0') for the owner authority and the first key from the "Active role" list (path 48'/1'/1'/0'/0') for the active authority.  When an item from the list box is selected, the public key appears in the PubKey box at the top of the window, where it can be copied to your computer's clipboard.
 
 Step 3: Confirm keys on Ledger Nano device
 ------------------------------------------
@@ -150,13 +150,13 @@ Steps:
 
 4. For the key weight, enter "1".  (This is equal to the threshold, meaning this key can unilaterally sign transactions as the account's active authority.)
 
-5. Click "Add" to add the key to the list of keys recognized by the account.  You will now see two keys listed under "Account / Key / Addresss".  They are the new key just added, and the old key that was generated when the account was registered.
+5. Click "Add" to add the key to the list of keys recognized by the account.  You will now see two keys listed under "Account / Key / Addresses".  They are the new key just added, and the old key that was generated when the account was registered.
 
 6. Click the "Remove" button next to the old key.  This will remove the ability of the old key to sign transactions for the account, leaving only the key derived from the Ledger Nano device to sign as the account's active authority.
 
 7. At the top of the window, click the "Save" button to apply these changes to the account.  You will be asked to confirm the "account update" transaction, and may be asked to type the password you chose when you created the account, in order to unlock the UI wallet.  When the transaction is broadcast and confirmed on the blockchain, your account's Active authority will have been successfully replaced with the new key managed by the Nano.
 
-Once these steps are complete, repeat the above steps, but this time for the "Owner Permissions" tab, and select a Nano key from the "Owner role" listbox.
+Once these steps are complete, repeat the above steps, but this time for the "Owner Permissions" tab, and select a Nano key from the "Owner role" list box.
 
 When both the Active and Owner keys have been replaced, your new account can *ONLY* sign transactions with the aid of your Ledger Nano hardware device, and your account is now secured.
 
@@ -174,7 +174,7 @@ The *SimpleGUIWallet* window is divided into four general areas:
 
 * **Middle Left**:  Here there are two tabs that show information about the selected account.  After clicking "Refresh Balances," the Assets tab will populate with a list of assets (tokens) held by the account, and the History tab will populate with a list of recent transactions conducted by the account.
 
-* **Middle Right**:  Here are tabs where you can "do things."  There is a tab for transfering tokens, a tab for querrying the Ledger Nano to determine what keys it manages, and a tab for Raw Transactions, which can be used for advanced purposes not covered by this tutorial.
+* **Middle Right**:  Here are tabs where you can "do things."  There is a tab for transferring tokens, a tab for querying the Ledger Nano to determine what keys it manages, and a tab for Raw Transactions, which can be used for advanced purposes not covered by this tutorial.
 
 * **Bottom**:  At the bottom is a status pane that will print messages informing you of how the app is interacting with the BitShares network and with the Ledger Nano hardware device.
 
@@ -198,7 +198,7 @@ The "Assets" tab on the left side of the window shows a list of assets held by t
 Receiving tokens
 ----------------
 
-Receiving crypto assets is very easy in BitShares.  Just give the sending party your BitShares account name, and they can send tokens to you.  There is no need to retrieve "addresses" or keys from the wallet in order to recieve funds. 
+Receiving crypto assets is very easy in BitShares.  Just give the sending party your BitShares account name, and they can send tokens to you.  There is no need to retrieve "addresses" or keys from the wallet in order to receive funds. 
 
 Sending tokens
 --------------
@@ -222,14 +222,14 @@ Sending tokens from your account can be done on the "Transfers" tab.
 
 6. Review transaction details on the Ledger Nano's display screen, and approve the transaction on the device via the "check" button if the details are correct, else reject it via the "x" button.
 
-7. If you confirmed the transaction on the device, then *SimpleGUIWallet* will receive a signature from the Nano, append it to the transaction, and broadcast it to the BitShares network.  The status pane will indicate if the transaction was sucessful or not.
+7. If you confirmed the transaction on the device, then *SimpleGUIWallet* will receive a signature from the Nano, append it to the transaction, and broadcast it to the BitShares network.  The status pane will indicate if the transaction was successful or not.
 
 After the transaction is broadcast, the balances in the Assets tab should update.  If they do not, click "Refresh Balances" to refresh them.  Likewise, the transfer operation should appear on the "History" tab, if the transaction was successful.
 
 Advanced usage
 --------------
 
-If you have followed this tutorial, then your new account is now solely controled by keys managed by your Ledger Nano S hardware wallet device.  It is possible that you may at some point desire to use some of the other features of the BitShares platform, beyond simple transfers.  The *BitShares App for Ledger Nano S* can sign any valid BitShares transaction, provided you can send it to the device for signing.  The "Raw Transactions" tab in *SimpleGUIWallet* allows this, provided you can construct the transaction as a JSON string.  How to do this is not covered by this tutorial, but the reader is directed to consult the technical documentation for BitShares or to seek the help of the BitShares community via forums or chat rooms. 
+If you have followed this tutorial, then your new account is now solely controlled by keys managed by your Ledger Nano S hardware wallet device.  It is possible that you may at some point desire to use some of the other features of the BitShares platform, beyond simple transfers.  The *BitShares App for Ledger Nano S* can sign any valid BitShares transaction, provided you can send it to the device for signing.  The "Raw Transactions" tab in *SimpleGUIWallet* allows this, provided you can construct the transaction as a JSON string.  How to do this is not covered by this tutorial, but the reader is directed to consult the technical documentation for BitShares or to seek the help of the BitShares community via forums or chat rooms. 
 
 Getting Support
 ===============
