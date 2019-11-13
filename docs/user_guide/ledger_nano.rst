@@ -9,19 +9,19 @@ This tutorial explains how to create a new BitShares account and set its Active 
 .. contents:: **Contents:**
     :depth: 2
 
-Requirements:
-=============
+Requirements
+============
 
 * A Ledger Nano S hardware wallet, with latest firmware.
 * An existing BitShares account (optional).
 * Ledger-aware wallet software, such as SimpleGUIWallet (described below), for managing your hardware-secured BitShares accounts.
 
-Installation and Setup:
-=======================
+Installation and Setup
+======================
 This section covers installation of the BitShares app on the Ledger Nano S hardware device, and the installation of the companion GUI wallet app called SimpleGUIWallet for managing your hardware-secured BitShares accounts from a host computer running Windows, OS X, or Linux.
 
-Installation of BitShares app from Ledger Live:
------------------------------------------------
+Installation of BitShares app from Ledger Live
+----------------------------------------------
 
 The BitShares App for Ledger Nano can be installed on your Ledger Nano S device from a host computer via the `Ledger Live <https://shop.ledger.com/pages/ledger-live>`_ device managemnt app.
 1. Select the "Manager" tab from the menu in Ledger Live.
@@ -44,13 +44,13 @@ The BitShares App for Ledger Nano can be installed on your Ledger Nano S device 
     
     Ledger Nano S Dashboard showing BitShares app installed.
     
-Installing SimpleGUIWallet companion app on host computer:
-----------------------------------------------------------
+Installing SimpleGUIWallet companion app on host computer
+---------------------------------------------------------
 
 A companion app, compatible with Windows, Mac, and Linux, for communicating with the the BitShares Nano app, is available from: (Download location TBD)
 
-Securing a BitShares Account with the Ledger Nano:
-==================================================
+Securing a BitShares Account with the Ledger Nano
+=================================================
 
 BitShares accounts work differently from Bitcoin wallets in that a named account must be registered on the BitShares blockchain.  The account will declare one or more public keys to act as "authorities" capable of signing transactions.
 
@@ -58,8 +58,8 @@ BitShares accounts are very capable and flexible.  The platform supports over 40
 
 This tutorial assumes that you already have an existing BitShares account for use in a standard, full-featured BitShares UI, and that you will be creating a new, separate account, to hold tokens secured by your Ledger Nano S hardware wallet device.  Essentially, we assume your existing account will be the "hot wallet," and the new account will be your hardware-secured "cold wallet."
 
-Step 1: Create an account to associate with the Nano:
------------------------------------------------------
+Step 1: Create an account to associate with the Nano
+----------------------------------------------------
 
 If you already have a BitShares account and it has "lifetime membership" status, you can easily create a new account by selecting "Create Account" from the main drop-down menu ("Burger" menu) in the upper-right corner of the Reference UI.
 
@@ -75,8 +75,8 @@ If you do not already have a BitShares account, or if your account does not have
 
 Once you have created this account, you will next need to retrieve **two** public keys from your Ledger Nano S hardware wallet, and set them as your account's "owner" and "active" authories.  Once the original account keys are removed and replaced with these new keys, the account will be controlled solely by the Ledger Nano S hardware device.
 
-Step 2: Get Public Keys from the Ledger Nano:
----------------------------------------------
+Step 2: Get Public Keys from the Ledger Nano
+--------------------------------------------
 
 A BitShares account specifies two types of authorities: "Owner," and "Active," which each declare a weighted list of public keys needed to sign transactions. (The weights allow for multisignature arrangements to be created.  Here we will only consider a single key per authority.)  For the majority of transaction types, either the "owner" authority or the "active" authority may sign the transaction.  Your newly-created account will have had default keys generated for it during registration.  We will replace these keys with public keys retrieved from the Ledger Nano device.  We do this as follows:
 
@@ -105,8 +105,8 @@ A BitShares account specifies two types of authorities: "Owner," and "Active," w
 
 5. Now we wish to select one key to use for our account's Owner role and one for the Active role.  You may of course choose any key, but the recommendation is to choose the first key on the "Owner role" list (path 48'/1'/0'/0'/0') for the owner authority and the first key from the "Active role" list (path 48'/1'/1'/0'/0') for the active authority.  When an item from the listbox is selected, the public key appears in the PubKey box at the top of the window, where it can be copied to your computer's clipboard.
 
-Step 3: Confirm keys on Ledger Nano device:
--------------------------------------------
+Step 3: Confirm keys on Ledger Nano device
+------------------------------------------
 
 It is highly recommended to *confirm* your selected keys on the Ledger Nano device prior to importing them as authorities into your new BitShares account.  This is to ensure that the *SimpleGUIWallet* companion app has not been tampered with to give you a decoy key.  Confirm keys as follows:
 
@@ -114,8 +114,8 @@ It is highly recommended to *confirm* your selected keys on the Ledger Nano devi
 
 2. On your Ledger Nano device, look to see that the device says "**Confirm public key**" and displays the exact same public key as you see in the *SimpleGUIWallet* app.  If the keys do not match, DO NOT trust the key from *SimpleGUIWallet*.  If the keys do match, then you know that the Ledger Nano device can sign transactions using the key, and you may import the key into your account, as described in the next subsection.
 
-Step 4: Add the keys to your new account:
------------------------------------------
+Step 4: Add the keys to your new account
+----------------------------------------
 
 In the BitShares UI wallet where you created your new account, navigate to the "Permissions" area by clicking the Menu icon (upper right), selecting "Settings," then "Accounts," and then "View Keys" for the appropriate account, as illustrated below:
 
@@ -160,8 +160,8 @@ When both the Active and Owner keys have been replaced, your new account can *ON
 (Note: The BitShares UI wallet Permissions tab will also let you replace the Memo key. However, this is not recommended in this tutorial.  Although SLIP-0048 does define a key path for memo keys, and these public keys can be retrieved from the Nano, the Ledger Nano S BitShares app does not currently support encrypting or decrypting memos with the Nano.  Leaving this key unchanged means you can still use the regular BitShares UI wallet to read memos attached to transactions.)
 
 
-Using the Companion app with Nano BitShares app:
-================================================
+Using the Companion app with Nano BitShares app
+===============================================
 
 *SimpleGUIWallet* is a very bare-bones, rudimentary GUI interface to the Ledger Nano BitShares app. It does not maintain a database of keys or accounts, and will not write any data or configuration files to disk. When you start *SimpleGUIWallet*, you will need to tell it which BitShares account you wish to use, and which key (specified as a SLIP-0048 derivation path) to use when signing transactions.
 
@@ -185,20 +185,20 @@ When you start up *SimpleGUIWallet*, it will automatically connect to the BitSha
     
     BitShares SimpleGUIWallet desktop companion app for Ledger Nano S BitShares app.
 
-Viewing account balances:
--------------------------
+Viewing account balances
+------------------------
 
 BitShares is a multi-asset platform.  The core token on BitShares is the BTS token, but there are also numerous user-issued assets and assets defined by smart contracts.  The Ledger Nano S BitShares app can send and receive any tokens that your BitShares account is authorized to hold.
 
 The "Assets" tab on the left side of the window shows a list of assets held by the selected account, and their respective balances.  After typing a BitShares account name in the "BitShares User Account" field at the top of the window, click the "Refresh Balances" button to refresh this list.
 
-Receiving tokens:
------------------
+Receiving tokens
+----------------
 
 Receiving crypto assets is very easy in BitShares.  Just give the sending party your BitShares account name, and they can send tokens to you.  There is no need to retrieve "addresses" or keys from the wallet to recieve funds. 
 
-Sending tokens:
----------------
+Sending tokens
+--------------
 
 Sending tokens from your account can be done on the "Transfers" tab.
 
@@ -223,13 +223,13 @@ Sending tokens from your account can be done on the "Transfers" tab.
 
 After the transaction is broadcast, the balances in the Assets tab should update.  If they do not, click "Refresh Balances" to refresh them.  Likewise, the transfer operation should appear on the "History" tab, if the transaction was successful.
 
-Advanced usage:
----------------
+Advanced usage
+--------------
 
 If you have followed this tutorial, then your new account is now solely controled by keys managed by your Ledger Nano S hardware wallet device.  It is possible that you may at some point desire to use some of the other features of the BitShares platform, beyond simple transfers.  The *BitShares App for Ledger Nano S* can sign any valid BitShares transaction, provided you can send it to the device for signing.  The "Raw Transactions" tab in *SimpleGUIWallet* allows this, provided you can construct the transaction as a JSON string.  How to do this is not covered by this tutorial, but the reader is directed to consult the technical documentation for BitShares or to seek the help of the BitShares community via forums or chat rooms. 
 
-Getting Support:
-================
+Getting Support
+===============
 
 * https://bitshares.org
 
