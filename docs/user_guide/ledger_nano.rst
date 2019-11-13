@@ -30,7 +30,7 @@ The BitShares App for Ledger Nano can be installed on your Ledger Nano S device 
 3. Click "Install" to install the BitShares app, following on-screen instructions
 
 .. figure:: ledger_nano/Ledger_Manager.png
-    :width: 80%
+    :width: 90%
     :align: center
     :alt: Ledger Live Manager screen
     :figclass: align-center
@@ -38,7 +38,7 @@ The BitShares App for Ledger Nano can be installed on your Ledger Nano S device 
     Ledger Live "Manager" tab, showing installation of BitShares app.
     
 .. figure:: ledger_nano/01_Dashboard_800.jpg
-    :width: 80%
+    :width: 90%
     :align: center
     :alt: Ledger Nano S Dashboard
     :figclass: align-center
@@ -69,7 +69,7 @@ If you already have a BitShares account and it has "lifetime membership" status,
 If you do not already have a BitShares account, or if your account does not have lifetime-membership status, then you can use either the standalone wallet or one of the web-hosted wallets (e.g. https://wallet.bitshares.org) to register the account, and a faucet will pay the registration fee for you. A tricky thing though is that most such wallets will only pay the registration fee for ONE account per wallet instance.  So if you used the standalone wallet to register your primary account, then you may wish to use the web-hosted wallet to register your new account, or vice-versa.  Or you can just load the web wallet from a different device, (or a different browser), to get back to the faucet-subsidized account registration screen.
 
 .. figure:: ledger_nano/Account_Create.png
-    :width: 80%
+    :width: 90%
     :align: center
     :alt: Account Create form in BitShares UI
     :figclass: align-center
@@ -99,7 +99,7 @@ A BitShares account specifies two types of authorities: "Owner," and "Active," w
    * The list boxes will now be populated with paths and public keys.
   
 .. figure:: ledger_nano/Public_Keys_Tab_Annotated.png
-    :width: 80%
+    :width: 90%
     :align: center
     :alt: Public Keys Tab in Companion App
     :figclass: align-center
@@ -123,7 +123,7 @@ Step 4: Add the keys to your new account
 In the BitShares UI wallet where you created your new account, navigate to the "Permissions" area by clicking the Menu icon (upper right), selecting "Settings," then "Accounts," and then "View Keys" for the appropriate account, as illustrated below:
 
 .. figure:: ledger_nano/Update_Keys_UI_Location.png
-    :width: 80%
+    :width: 90%
     :align: center
     :alt: Select "Settings" from main menu
     :figclass: align-center
@@ -133,7 +133,7 @@ In the BitShares UI wallet where you created your new account, navigate to the "
 Once in the "Permissions" tab, you should see the screen below, where we will first replace the Active authority key, and then the Owner authority key.  
 
 .. figure:: ledger_nano/Update_Keys_Step3.png
-    :width: 80%
+    :width: 90%
     :align: center
     :alt: Add new key, remove old key 
     :figclass: align-center
@@ -181,7 +181,7 @@ The *SimpleGUIWallet* window is divided into four general areas:
 When you start up *SimpleGUIWallet*, it will automatically connect to the BitShares network by locating a public API node to communicate with.
 
 .. figure:: ledger_nano/Companion_App.png
-    :width: 80%
+    :width: 90%
     :align: center
     :alt: Companion App
     :figclass: align-center
