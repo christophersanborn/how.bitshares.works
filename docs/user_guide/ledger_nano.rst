@@ -198,7 +198,7 @@ The "Assets" tab on the left side of the window shows a list of assets held by t
 Receiving tokens
 ----------------
 
-Receiving crypto assets is very easy in BitShares.  Just give the sending party your BitShares account name, and they can send tokens to you.  There is no need to retrieve "addresses" or keys from the wallet to recieve funds. 
+Receiving crypto assets is very easy in BitShares.  Just give the sending party your BitShares account name, and they can send tokens to you.  There is no need to retrieve "addresses" or keys from the wallet in order to recieve funds. 
 
 Sending tokens
 --------------
