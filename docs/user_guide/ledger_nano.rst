@@ -191,7 +191,7 @@ When you start up *SimpleGUIWallet*, it will automatically connect to the BitSha
 Viewing account balances
 ------------------------
 
-BitShares is a multi-asset platform.  The core token on BitShares is the BTS token, but there are also numerous user-issued assets and assets defined by smart contracts.  The Ledger Nano S BitShares app can send and receive any tokens that your BitShares account is authorized to hold.
+BitShares is a multi-asset platform.  The core token on BitShares is the BTS token, but there are also numerous user-issued assets and assets defined by smart contracts.  The Ledger Nano S BitShares app can send and receive any tokens that your BitShares account can hold.
 
 The "Assets" tab on the left side of the window shows a list of assets held by the selected account, and their respective balances.  After typing a BitShares account name in the "BitShares User Account" field at the top of the window, click the "Refresh Balances" button to refresh this list.
 
