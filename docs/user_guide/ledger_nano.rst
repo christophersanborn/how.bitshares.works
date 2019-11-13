@@ -222,7 +222,7 @@ Sending tokens from your account can be done on the "Transfers" tab.
 
 6. Review transaction details on the Ledger Nano's display screen, and approve the transaction on the device via the "check" button if the details are correct, else reject it via the "x" button.
 
-7. If you confirmed the transaction on the device, then *SimpleGUIWallet* will append the signature to the transaction and broadcast it to the BitShares netowrk.  The status pane will indicate if the transaction was sucessful or not.
+7. If you confirmed the transaction on the device, then *SimpleGUIWallet* will receive a signature from the Nano, append it to the transaction, and broadcast it to the BitShares network.  The status pane will indicate if the transaction was sucessful or not.
 
 After the transaction is broadcast, the balances in the Assets tab should update.  If they do not, click "Refresh Balances" to refresh them.  Likewise, the transfer operation should appear on the "History" tab, if the transaction was successful.
 
